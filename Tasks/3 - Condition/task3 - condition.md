@@ -1,0 +1,1 @@
+Write a program that asks the user what they want to eat. If the answer is `seed`, then display `Nice choice!`. If the answer is `bread`, then display `Very well`. For every other answer, display `It's wrong!`
