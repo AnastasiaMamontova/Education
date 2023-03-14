@@ -1,22 +1,22 @@
 function calculateWorkingDays() {
-  var daysInYearInput = document.getElementById("daysInYear");
-  var holidaysInput = document.getElementById("holidays");
-  var vacationInput = document.getElementById("vacation");
-  var workingDaysOutput = document.getElementById("workingDays");
+  const daysInYearInput = document.getElementById("daysInYear");
+  const holidaysInput = document.getElementById("holidays");
+  const vacationInput = document.getElementById("vacation");
+  const workingDaysOutput = document.getElementById("workingDays");
 
-  var daysInYear = daysInYearInput.value;
-  var holidays = holidaysInput.value;
-  var vacation = vacationInput.value;
+  const daysInYear = daysInYearInput.value;
+  const holidays = holidaysInput.value;
+  const vacation = vacationInput.value;
 
-  var workingDays = daysInYear - holidays - vacation;
+  const workingDays = daysInYear - holidays - vacation;
 
   workingDaysOutput.value = workingDays;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  var daysInYearInput = document.getElementById("daysInYear");
-  var holidaysInput = document.getElementById("holidays");
-  var vacationInput = document.getElementById("vacation");
+  const daysInYearInput = document.getElementById("daysInYear");
+  const holidaysInput = document.getElementById("holidays");
+  const vacationInput = document.getElementById("vacation");
 
   daysInYearInput.addEventListener("input", calculateWorkingDays);
   holidaysInput.addEventListener("input", calculateWorkingDays);
